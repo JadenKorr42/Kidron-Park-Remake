@@ -1,0 +1,18 @@
+.topnav {
+  border: solid black 1px;
+  background-color: yellow;
+  width: 90%;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: hotpink;
+  padding: 5px;
+  border: solid black 1px;
+  width: 20%;
+  text-align: center;
+  border-collapse: collapse;
+}

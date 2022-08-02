@@ -5,6 +5,7 @@ html, body {
 
 nav {
   background-color: green;
+  border: solid black 5px;
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -20,7 +21,7 @@ li {
   padding: 0.5rem 0.5rem;
 }
 
-a {
+nav a {
   color: hotpink;
   padding: 1rem;
   border: solid black 1px;
@@ -29,6 +30,7 @@ a {
 
 .container {
   margin: 0 auto;
+  padding: 0.5rem;
 }
 
 .main {
@@ -48,20 +50,44 @@ a {
 }
 
 #description {
-  padding: 0.5rem;
   border: solid hotpink 5px;
   display: flex;
+  background-color: green;
 }
 
 #description img {
   border: solid black 5px;
   max-width: 35%;
-  margin: 0.5rem;
+  margin: 0.25rem;
+  padding: 0.25rem;
   overflow: hidden;
 }
 
-#description p {
-  border: solid green 5px;
+#text {
+  border: solid black 5px;
   min-width: 60%;
-  margin: 0.5rem;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+#about {
+  border: solid red 5px;
+  display: flex;
+  background-color: lightblue;
+}
+
+iframe, .map {
+  min-width: 32rem;
+  min-height: 24rem;
+  border: solid green 5px;
+  overflow: hidden;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+#contact {
+  border: solid pink 5px;
+  min-width: 35%;
+  margin: 0.25rem;
+  padding: 0.25rem;
 }

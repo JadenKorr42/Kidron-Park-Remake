@@ -1,18 +1,67 @@
-.topnav {
-  border: solid black 1px;
-  background-color: yellow;
-  width: 90%;
-  padding: 5px;
-  margin: 5px;
+html, body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+nav {
+  background-color: green;
   display: flex;
-  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: stretch;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
 }
 
 a {
   color: hotpink;
-  padding: 5px;
+  padding: 1rem;
   border: solid black 1px;
-  width: 20%;
   text-align: center;
-  border-collapse: collapse;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.main {
+  height: 25rem;
+  background-image: url("../pics/Park_Path.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: solid red 5px;
+}
+
+.main h1 {
+  font-size: 5rem;
+  color: black;
+  text-align: center;
+  text-shadow: 1px 1px 4px white;
+}
+
+#description {
+  padding: 0.5rem;
+  border: solid hotpink 5px;
+  display: flex;
+}
+
+#description img {
+  border: solid black 5px;
+  max-width: 35%;
+  margin: 0.5rem;
+  overflow: hidden;
+}
+
+#description p {
+  border: solid green 5px;
+  min-width: 60%;
+  margin: 0.5rem;
 }

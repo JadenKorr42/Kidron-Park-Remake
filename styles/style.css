@@ -5,9 +5,7 @@ html, body {
 
 nav {
   background-color: green;
-  border: solid black 5px;
   display: flex;
-  flex-grow: 1;
   justify-content: center;
   align-items: stretch;
 }
@@ -18,13 +16,12 @@ ul {
 
 li {
   display: inline-block;
-  padding: 0.5rem 0.5rem;
+  padding: 0.25rem 1rem;
+  border-left: solid white 1px;
+  border-right: solid white 1px;
 }
 
 nav a {
-  color: hotpink;
-  padding: 1rem;
-  border: solid black 1px;
   text-align: center;
 }
 
@@ -34,29 +31,28 @@ nav a {
 }
 
 .main {
-  height: 25rem;
+  height: 24rem;
   background-image: url("../pics/Park_Path.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border: solid red 5px;
 }
 
 .main h1 {
+  display: flex;
   font-size: 5rem;
   color: black;
   text-align: center;
+  justify-content: center;
   text-shadow: 1px 1px 4px white;
+  border: solid hotpink 5px;
 }
 
 #description {
-  border: solid hotpink 5px;
   display: flex;
-  background-color: green;
 }
 
 #description img {
-  border: solid black 5px;
   max-width: 35%;
   margin: 0.25rem;
   padding: 0.25rem;
@@ -64,14 +60,12 @@ nav a {
 }
 
 #text {
-  border: solid black 5px;
   min-width: 60%;
   margin: 0.25rem;
   padding: 0.25rem;
 }
 
 #about {
-  border: solid red 5px;
   display: flex;
   background-color: lightblue;
 }
@@ -79,14 +73,12 @@ nav a {
 iframe, .map {
   min-width: 32rem;
   min-height: 24rem;
-  border: solid green 5px;
   overflow: hidden;
   margin: 0.25rem;
   padding: 0.25rem;
 }
 
 #contact {
-  border: solid pink 5px;
   min-width: 35%;
   margin: 0.25rem;
   padding: 0.25rem;

@@ -10,13 +10,14 @@ nav {
   align-items: stretch;
 }
 
-ul {
+#nav_bar {
   list-style: none;
 }
 
-li {
+#nav_item {
   display: inline-block;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 2rem;
+  font-size: 1.25rem;
   border-left: solid white 1px;
   border-right: solid white 1px;
 }
@@ -27,7 +28,7 @@ nav a {
 
 .container {
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .main {
@@ -45,7 +46,6 @@ nav a {
   text-align: center;
   justify-content: center;
   text-shadow: 1px 1px 4px white;
-  border: solid hotpink 5px;
 }
 
 #description {
@@ -71,7 +71,7 @@ nav a {
 }
 
 iframe, .map {
-  min-width: 32rem;
+  min-width: 30rem;
   min-height: 24rem;
   overflow: hidden;
   margin: 0.25rem;
@@ -79,7 +79,36 @@ iframe, .map {
 }
 
 #contact {
-  min-width: 35%;
+  flex-grow:1;
   margin: 0.25rem;
   padding: 0.25rem;
+}
+
+table, th, td {
+  background-color: silver;
+  border: solid black 1px;
+  border-collapse: collapse;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+th, td {
+  min-width: 5rem;
+  text-align: center;
+}
+
+th {
+    padding: 1rem 0.5rem;
+}
+
+#underliner {
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+}
+
+#rental_info {
+  max-width: 70%;
 }

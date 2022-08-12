@@ -33,3 +33,11 @@ iframe, .map {
 #contact {
   border: solid pink 5px;
 }
+
+#table, #reserve {
+  border: solid green 5px;
+}
+
+#rental_info, #building {
+  border: solid red 5px;
+}

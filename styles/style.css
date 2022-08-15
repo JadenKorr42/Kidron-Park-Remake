@@ -70,7 +70,7 @@ nav a {
   background-color: lightblue;
 }
 
-iframe, .map {
+#map {
   min-width: 30rem;
   min-height: 24rem;
   overflow: hidden;
@@ -79,9 +79,10 @@ iframe, .map {
 }
 
 #contact {
-  flex-grow:1;
+  flex-grow: 1;
   margin: 0.25rem;
   padding: 0.25rem;
+  text-align: center;
 }
 
 table, th, td {
@@ -111,4 +112,22 @@ h2 {
 
 #rental_info {
   max-width: 70%;
+}
+
+#cal-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calendar {
+  min-height: 30rem;
+  flex-grow: 1;
+  overflow: hidden;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+#notes {
+  text-align: center;
 }

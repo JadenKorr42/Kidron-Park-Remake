@@ -22,11 +22,11 @@ nav a {
   border: solid black 5px;
 }
 
-#about {
+#about, #cal-box {
   border: solid red 5px;
 }
 
-iframe, .map {
+#map, #calendar {
   border: solid green 5px;
 }
 

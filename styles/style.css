@@ -1,3 +1,4 @@
+/*Rules for all pages*/
 html, body {
   font-family: sans-serif;
   font-size: 16px;
@@ -48,31 +49,45 @@ nav a {
   text-shadow: 1px 1px 4px white;
 }
 
-#description {
-  display: flex;
+#underliner {
+  text-decoration: underline;
 }
 
-#description img {
-  max-width: 35%;
+h2 {
+  text-align: center;
+}
+
+#description_box {
+  display: flex;
+  justify-content: center;
+}
+
+/*Rules for Home page*/
+#description_img {
+  max-width: 30%;
   margin: 0.25rem;
   padding: 0.25rem;
   overflow: hidden;
 }
 
-#text {
+#description_text {
   min-width: 60%;
+  max-width: 70%;
   margin: 0.25rem;
   padding: 0.25rem;
+  align-self: center;
+  font-size: 1.15rem;
 }
 
 #about {
   display: flex;
+  flex-wrap: wrap;
   background-color: lightblue;
 }
 
 #map {
-  min-width: 30rem;
-  min-height: 24rem;
+  min-width: 40rem;
+  min-height: 28rem;
   overflow: hidden;
   margin: 0.25rem;
   padding: 0.25rem;
@@ -83,8 +98,10 @@ nav a {
   margin: 0.25rem;
   padding: 0.25rem;
   text-align: center;
+  font-size: 1.15rem;
 }
 
+/*Rules for Facility page*/
 table, th, td {
   background-color: silver;
   border: solid black 1px;
@@ -102,19 +119,21 @@ th {
     padding: 1rem 0.5rem;
 }
 
-#underliner {
-  text-decoration: underline;
+#rental_info {
+  min-width: 60%;
+  max-width: 70%;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  align-self: center;
+  font-size: 1.15rem;
 }
 
-h2 {
+#reserve {
   text-align: center;
 }
 
-#rental_info {
-  max-width: 70%;
-}
-
-#cal-box {
+/*Rules for Calendar page*/
+#cal_box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,4 +149,39 @@ h2 {
 
 #notes {
   text-align: center;
+}
+
+/*Rules for screen widths common to tablets*/
+@media only screen and (max-width: 700px) {
+/*Rules for all pages*/
+  .main {
+    height: 20rem;
+  }
+  .main h1 {
+    font-size: 4rem;
+  }
+  #nav_item {
+    font-size: 1rem;
+  }
+
+/*Rules for Home page*/
+  #description_text {
+    font-size: 1rem;
+    max-width: 95%;
+  }
+  #description_img {
+    display: none;
+  }
+  #map{
+    min-width: 30rem;
+  }
+  #contact {
+    font-size: 1rem;
+  }
+
+/*Rules for Facility page*/
+  #rental_info{
+    font-size: 1rem;
+  }
+
 }

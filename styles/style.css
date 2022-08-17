@@ -46,7 +46,7 @@ nav a {
   color: black;
   text-align: center;
   justify-content: center;
-  text-shadow: 1px 1px 4px white;
+  text-shadow: 1px 1px 8px white;
 }
 
 #underliner {
@@ -59,20 +59,19 @@ h2 {
 
 #description_box {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 /*Rules for Home page*/
 #description_img {
-  max-width: 30%;
+  max-width: 21rem;
   margin: 0.25rem;
   padding: 0.25rem;
-  overflow: hidden;
+  object-fit: contain;
 }
 
 #description_text {
-  min-width: 60%;
-  max-width: 70%;
+  max-width: 71rem;
   margin: 0.25rem;
   padding: 0.25rem;
   align-self: center;
@@ -128,6 +127,10 @@ th {
   font-size: 1.15rem;
 }
 
+#table {
+  align-self: center;
+}
+
 #reserve {
   text-align: center;
 }
@@ -151,6 +154,20 @@ th {
   text-align: center;
 }
 
+
+
+/*Rules for screen widths common to laptops or smaller windows*/
+@media only screen and (max-width: 960px) {
+/*Rules for Home page*/
+#description_text {
+  max-width: 95%;
+}
+#description_img {
+  display: none;
+}
+
+} /*End of 960px Rules*/
+
 /*Rules for screen widths common to tablets*/
 @media only screen and (max-width: 700px) {
 /*Rules for all pages*/
@@ -158,19 +175,20 @@ th {
     height: 20rem;
   }
   .main h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    padding-top: 0.75rem;
   }
   #nav_item {
     font-size: 1rem;
+    padding: 0.25rem 1rem;
+  }
+  #description_box {
+    flex-wrap: wrap;
   }
 
 /*Rules for Home page*/
   #description_text {
     font-size: 1rem;
-    max-width: 95%;
-  }
-  #description_img {
-    display: none;
   }
   #map{
     min-width: 30rem;
@@ -181,7 +199,31 @@ th {
 
 /*Rules for Facility page*/
   #rental_info{
+    max-width: 95%;
     font-size: 1rem;
   }
+  #about {
+    margin: 0.5rem 0rem;
+  }
 
+} /*End of 700px Rules*/
+
+/*Rules for screen widths common to phones*/
+@media only screen and (max-width: 470px) {
+/*Rules for all pages*/
+  .main {
+    height: 16rem;
+  }
+  .main h1 {
+    font-size: 3rem;
+  }
+  #nav_item {
+    padding: 0.25rem 0.5rem;
+  }
+
+/*Rules for Home page*/
+#map{
+  min-width: 23rem;
 }
+
+} /*End of 470px Rules*/

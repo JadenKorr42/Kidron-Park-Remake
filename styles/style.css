@@ -154,6 +154,37 @@ th {
   text-align: center;
 }
 
+/*Rules for Gallery page*/
+#gallery_box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#gallery_tile {
+  display: grid;
+  max-width: 30%;
+
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0.25rem;
+  padding: 0.25rem;
+  border: solid black 1px;
+  object-fit: contain;
+}
+
+#gallery_img {
+  display: block;
+  width: 100%;
+  justify-self: center;
+  overflow: hidden;
+  max-height: 17rem;
+}
+
+#gallery_caption {
+  text-align: center;
+}
 
 
 /*Rules for screen widths common to laptops or smaller windows*/
@@ -166,7 +197,13 @@ th {
   display: none;
 }
 
+/*Rules for Gallery Page*/
+  #gallery_tile {
+    max-width: 40%;
+  }
+
 } /*End of 960px Rules*/
+
 
 /*Rules for screen widths common to tablets*/
 @media only screen and (max-width: 700px) {
@@ -204,6 +241,11 @@ th {
   }
   #about {
     margin: 0.5rem 0rem;
+  }
+
+/*Rules for Gallery Page*/
+  #gallery_tile {
+    max-width: 95%;
   }
 
 } /*End of 700px Rules*/

@@ -41,3 +41,19 @@ nav a {
 #rental_info, #building {
   border: solid red 5px;
 }
+
+#gallery_box {
+  border: solid green 5px;
+}
+
+#gallery_tile {
+  border: solid pink 5px;
+}
+
+#gallery_img {
+  border: solid red 1px;
+}
+
+#gallery_caption {
+  border: solid green 1px;
+}

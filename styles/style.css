@@ -160,29 +160,33 @@ th {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  padding: 0.25rem;
 }
 
 #gallery_tile {
   display: grid;
-  max-width: 30%;
-
+  width: 30%;
+  height: 19rem;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0.25rem;
+  margin: 0.25rem;
   padding: 0.25rem;
   border: solid black 1px;
-  object-fit: contain;
 }
 
 #gallery_img {
   display: block;
-  width: 100%;
   justify-self: center;
   overflow: hidden;
-  max-height: 17rem;
+  height: 16rem;
+  width: 100%;
+  padding: 0.25rem;
+  object-fit: contain;
 }
 
 #gallery_caption {
+  margin: 0.25rem;
+  padding: 0.25rem;
   text-align: center;
 }
 
@@ -199,7 +203,11 @@ th {
 
 /*Rules for Gallery Page*/
   #gallery_tile {
-    max-width: 40%;
+    width: 45%;
+    height: 17rem;
+  }
+  #gallery_img {
+    height: 14rem;
   }
 
 } /*End of 960px Rules*/
@@ -245,10 +253,14 @@ th {
 
 /*Rules for Gallery Page*/
   #gallery_tile {
-    max-width: 95%;
+    height: 15rem;
+  }
+  #gallery_img {
+    height: 12rem;
   }
 
 } /*End of 700px Rules*/
+
 
 /*Rules for screen widths common to phones*/
 @media only screen and (max-width: 470px) {
@@ -267,5 +279,14 @@ th {
 #map{
   min-width: 23rem;
 }
+
+/*Rules for Gallery Page*/
+  #gallery_tile {
+    width: 100%;
+    height: 17rem;
+  }
+  #gallery_img {
+    height: 14rem;
+  }
 
 } /*End of 470px Rules*/

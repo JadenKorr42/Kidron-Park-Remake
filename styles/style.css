@@ -74,8 +74,7 @@ h2 {
 
 #description_text {
   max-width: 71rem;
-  margin: 0.25rem;
-  padding: 0.25rem;
+  margin: auto 1rem;
   align-self: center;
   font-size: 1.15rem;
 }
@@ -86,17 +85,21 @@ h2 {
   background-color: lightblue;
 }
 
+#map_box {
+  display: flex;
+  width: 60%;
+}
+
 #map {
-  min-width: 40rem;
-  min-height: 28rem;
-  overflow: hidden;
+  flex-grow: 1;
+  width: 95%;
   margin: 0.25rem;
   padding: 0.25rem;
 }
 
 #contact {
-  flex-grow: 1;
-  margin: 0.25rem;
+  width: 35%;
+  margin: 1rem 0.5rem;
   padding: 0.25rem;
   text-align: center;
   font-size: 1.15rem;
@@ -108,7 +111,7 @@ table, th, td {
   border: solid black 1px;
   border-collapse: collapse;
   padding: 0.5rem;
-  font-size: 0.9rem;
+  margin: 1rem 0.5rem;
 }
 
 th, td {
@@ -133,27 +136,35 @@ th {
   align-self: center;
 }
 
+#building {
+  max-width: 65%;
+  font-size: 1.1rem;
+}
+
 #reserve {
+  max-width: 30%;
   text-align: center;
+  font-size: 1.1rem;
 }
 
 /*Rules for Calendar page*/
 #cal_box {
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #calendar {
-  min-height: 30rem;
+  height: 38rem;
+  max-width: 95%;
   flex-grow: 1;
   overflow: hidden;
-  margin: 0.25rem;
-  padding: 0.25rem;
 }
 
 #notes {
   text-align: center;
+  margin: 0;
 }
 
 /*Rules for Gallery page*/
@@ -202,6 +213,25 @@ th {
 #description_img {
   display: none;
 }
+#map_box {
+  width: 90%;
+  height: 32rem;
+}
+#contact {
+  width: 90%;
+}
+
+/*Rules for Facilities Page*/
+#rental_info {
+  font-size: 1.1rem;
+}
+table, th, td {
+  font-size: 0.9rem;
+}
+#building, #reserve {
+  font-size: 1rem;
+}
+
 
 /*Rules for Gallery Page*/
   #gallery_tile {
@@ -236,10 +266,15 @@ th {
   #description_text {
     font-size: 1rem;
   }
-  #map{
-    min-width: 30rem;
+  #about {
+    align-items: center;
+  }
+  #map_box {
+    width: 95%;
+    height: 28rem;
   }
   #contact {
+    width: 90%;
     font-size: 1rem;
   }
 
@@ -250,6 +285,17 @@ th {
   }
   #about {
     margin: 0.5rem 0rem;
+  }
+  #building, #reserve {
+    font-size: 1rem;
+  }
+
+/*Rules for Calendar Page*/
+  #calendar {
+    height: 34rem;
+  }
+  #notes {
+    font-size: 0.75rem;
   }
 
 /*Rules for Gallery Page*/
@@ -279,10 +325,10 @@ th {
     padding: 0.25rem 0.5rem;
   }
 
-/*Rules for Home page*/
-#map{
-  min-width: 23rem;
-}
+  /*Rules for Calendar Page*/
+  #calendar {
+    height: 30rem;
+  }
 
 /*Rules for Gallery Page*/
   #gallery_tile {
@@ -291,7 +337,7 @@ th {
   #gallery_img {
     max-height: 17rem;
   }
-  #gallery_caption{
+  #gallery_caption {
     font-weight: normal;
   }
 

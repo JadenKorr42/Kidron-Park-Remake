@@ -12,6 +12,8 @@ nav {
 }
 
 #nav_bar {
+  padding: 0.5rem;
+  margin: 0.5rem;
   list-style: none;
 }
 
@@ -66,10 +68,10 @@ h2 {
 #description_img {
   margin: 0.25rem;
   padding: 0.25rem;
-  object-fit: contain;
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 18rem;
   align-self: center;
+  object-fit: contain;
 }
 
 #description_text {
@@ -210,7 +212,7 @@ th {
 #description_text {
   max-width: 95%;
 }
-#description_img {
+#description_img{
   display: none;
 }
 #map_box {
@@ -236,6 +238,7 @@ table, th, td {
 /*Rules for Gallery Page*/
   #gallery_tile {
     max-height: 35rem;
+
   }
   #gallery_img {
     max-height: 32rem;
@@ -254,12 +257,13 @@ table, th, td {
     font-size: 3.5rem;
     padding-top: 0.75rem;
   }
+  #nav_bar {
+    padding: 0.25rem;
+    margin: 0.25rem;
+  }
   #nav_item {
     font-size: 1rem;
     padding: 0.25rem 1rem;
-  }
-  #description_box {
-    flex-wrap: wrap;
   }
 
 /*Rules for Home page*/
@@ -308,7 +312,6 @@ table, th, td {
   #gallery_caption {
     font-size: 1rem;
   }
-
 } /*End of 700px Rules*/
 
 

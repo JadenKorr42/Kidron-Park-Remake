@@ -5,7 +5,7 @@ html, body {
 }
 
 nav {
-  background-color: green;
+  background-color: #577838;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -45,10 +45,10 @@ nav a {
 .main h1 {
   display: flex;
   font-size: 5rem;
-  color: black;
+  color: #26221A;
   text-align: center;
   justify-content: center;
-  text-shadow: 1px 1px 8px white;
+  text-shadow: 1px 1px 8px #E1EAC4;
 }
 
 #underliner {
@@ -59,12 +59,23 @@ h2 {
   text-align: center;
 }
 
+footer {
+  margin: 0;
+  padding: 0.5rem;
+  background-color: #577838;
+}
+
+footer p {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+/*Rules for Home page*/
 #description_box {
   display: flex;
   justify-content: space-between;
 }
 
-/*Rules for Home page*/
 #description_img {
   margin: 0.25rem;
   padding: 0.25rem;
@@ -79,12 +90,13 @@ h2 {
   margin: auto 1rem;
   align-self: center;
   font-size: 1.15rem;
+  padding: 0.25rem 1rem;
 }
 
 #about {
   display: flex;
   flex-wrap: wrap;
-  background-color: lightblue;
+  background-color: #98C36C;
 }
 
 #map_box {
@@ -108,8 +120,15 @@ h2 {
 }
 
 /*Rules for Facility page*/
+#rental_box {
+  padding: 0.25rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 table, th, td {
-  background-color: silver;
+  background-color: #9FAA9C;
   border: solid black 1px;
   border-collapse: collapse;
   padding: 0.5rem;
@@ -122,12 +141,13 @@ th, td {
 }
 
 th {
-    padding: 1rem 0.5rem;
+  background-color: #E1EAC4;
+  padding: 1rem 0.5rem;
 }
 
 #rental_info {
   min-width: 60%;
-  max-width: 70%;
+  max-width: 65%;
   margin: 0.25rem;
   padding: 0.25rem;
   align-self: center;
@@ -135,6 +155,7 @@ th {
 }
 
 #table {
+  max-width: 30%;
   align-self: center;
 }
 
@@ -211,6 +232,7 @@ th {
 /*Rules for Home page*/
 #description_text {
   max-width: 95%;
+  padding: 0.25rem 0.5rem;
 }
 #description_img{
   display: none;
@@ -224,6 +246,10 @@ th {
 }
 
 /*Rules for Facilities Page*/
+#rental_box {
+  padding: 0.25rem 0.5rem;
+}
+
 #rental_info {
   font-size: 1.1rem;
 }
@@ -283,14 +309,18 @@ table, th, td {
   }
 
 /*Rules for Facility page*/
-  #rental_info{
+  #rental_info {
     max-width: 95%;
     font-size: 1rem;
   }
+  #table {
+    max-width: 95%;
+  }
   #about {
-    margin: 0.5rem 0rem;
+    margin-top: 0.5rem;
   }
   #building, #reserve {
+    max-width: 95%;
     font-size: 1rem;
   }
 
